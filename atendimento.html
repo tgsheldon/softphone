@@ -49,7 +49,7 @@
 
         <div class="row">
 
-          <div class="col-6 pad-right-8">
+          <div class="col-6 pad-right-8 box-tipo">
             <select data-id="select-tipo-participante">
               <option data-display="Selecione">Selecione</option>
               <option value="Participantes contrato">Participantes contrato</option>
@@ -60,7 +60,7 @@
             </select>
           </div>
 
-          <div class="col-6 pad-left-8">
+          <div class="col-6 pad-left-8 box-participante">
             <select data-id="select-nome-participante">
               <option data-display="Selecione">Selecione</option>
               <option Value="Selecionar todos">Selecionar todos</option>
@@ -68,6 +68,18 @@
               <option value="Fabiano Araújo">Fabiano Araújo</option>
               <option value="isabella Ferreira">isabella Ferreira</option>
             </select>
+          </div>
+
+          <div class="col-6 pad-right-8 box-nao-cadastrado hidden">
+            
+            <input class="input font16 pad-both-12 pad-sides-16 br-4 full" type="text" placeholder="Nome"/>
+             
+          </div>
+
+          <div class="col-6 pad-left-8 box-nao-cadastrado hidden">
+            
+            <input class="input font16 pad-both-12 pad-sides-16 br-4 full" type="text" placeholder="DDD + telefone" data-mask="(00) 00000-0000" />
+
           </div>
 
           <div class="col-12">
@@ -95,6 +107,10 @@
             <li class="item">
               <p class="font12 cl-gray-49">27/08/2019 - 11:12</p>
               <p class="font14 cl-gray-49">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </li>
+            <li class="item">
+              <p class="font12 cl-gray-49">26/08/2019 - 10:01.</p>
+              <p class="font14 cl-gray-49">Aculis risus faucibus euismod mollis, lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
             </li>
             <li class="item">
               <p class="font12 cl-gray-49">26/08/2019 - 10:01.</p>
@@ -138,6 +154,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="./js/jquery.nice-select.min.js"></script>
+<script src="./js/jquery.mask.min.js"></script>
+<script src="./js/mask.js"></script>
 <script src="./js/main.js"></script>
 
 </html>

@@ -47,6 +47,17 @@ $(document).ready(function () {
 
 
   function checkSelects() {
+    if (tipoParticipante.val() == 'Participante não cadastrado') {
+      $('.box-tipo').removeClass('col-6').removeClass('pad-right-8').addClass('col-12');
+
+      $('.box-participante').hide();
+      $('.box-nao-cadastrado').show();
+    } else {
+      $('.box-tipo').removeClass('col-12').addClass('pad-right-8').addClass('col-6');
+      $('.box-participante').show();
+      $('.box-nao-cadastrado').hide();
+    }
+
     if (tipoParticipante.val() !== 'Selecione' && nomeParticipante.val() !== 'Selecione') {
       button.removeClass('opacity-06');
     } else {
@@ -55,7 +66,7 @@ $(document).ready(function () {
   }
 
   function addParticipante() {
-    $('.lista-chamada').append('<li class="chamada"><p class="font12 on-bold">' + nomeParticipante.val() + '</p><p class="font12">' + tipoParticipante.val() + '</p></li>');
+    $('.lista-chamada').append('<li class="row valign-middle halign-between chamada"><div><p class="font12 on-bold">' + nomeParticipante.val() + '</p><p class="font12">' + tipoParticipante.val() + '</p></div><a class="font-12 bg-warning-dark br-4 cl-white halign-middle mg-top-16 pad-both-8 pad-sides-8 opacity-06 pointer" href="#">Aguardando</a></li>');
 
     tipoParticipante.val('');
   }

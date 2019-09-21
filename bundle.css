@@ -3452,6 +3452,10 @@ textarea {
   background: #ffa310;
 }
 
+.bg-warning-dark {
+  background: #BD8B0C;
+}
+
 .bg-success {
   background: #21a310;
 }
@@ -3526,6 +3530,10 @@ textarea {
 
 .cl-warning {
   color: #ffa310;
+}
+
+.cl-warning-dark {
+  color: #BD8B0C;
 }
 
 .cl-success {
@@ -10729,6 +10737,22 @@ html {
   overflow-y: auto;
 }
 
+.box-status::-webkit-scrollbar {
+  border-radius: 12px;
+  height: 12px;
+  width: 16px;
+}
+
+.box-status::-webkit-scrollbar-thumb {
+  border: 4px solid white;
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+}
+
+.box-status::-webkit-scrollbar-track {
+  border-radius: 12px;
+}
+
 .box-status .lista-status .item {
   padding-left: 40px;
   padding-bottom: 32px;
@@ -10764,11 +10788,31 @@ html {
   height: 10px;
 }
 
+.input {
+  border: 1px solid #f8f8f8;
+}
+
+.input::-webkit-input-placeholder {
+  color: blue;
+}
+
+.input:-ms-input-placeholder {
+  color: blue;
+}
+
+.input::-ms-input-placeholder {
+  color: blue;
+}
+
+.input::placeholder {
+  color: blue;
+}
+
 .nice-select {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #fff;
   border-radius: 5px;
-  border: solid 1px #c1c1c1;
+  border: solid 1px #f8f8f8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   clear: both;
@@ -10793,11 +10837,11 @@ html {
 }
 
 .nice-select:hover {
-  border-color: #c1c1c1;
+  border-color: #f8f8f8;
 }
 
 .nice-select:active, .nice-select.open, .nice-select:focus {
-  border-color: #c1c1c1;
+  border-color: #f8f8f8;
 }
 
 .nice-select:after {
