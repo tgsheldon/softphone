@@ -45,6 +45,15 @@ $(document).ready(function () {
     addParticipante()
   });
 
+  $('body').keyup(function () {
+    if ($('#nome-nao-cadastrado').val() !== '' && $('#telefone-nao-cadastrado').val().length >= 15) {
+      button.removeClass('opacity-06');
+    } else {
+      button.addClass('opacity-06');
+    }
+
+  });
+
 
   function checkSelects() {
     if (tipoParticipante.val() == 'Participante não cadastrado') {
@@ -66,7 +75,11 @@ $(document).ready(function () {
   }
 
   function addParticipante() {
-    $('.lista-chamada').append('<li class="row valign-middle halign-between chamada"><div><p class="font12 on-bold">' + nomeParticipante.val() + '</p><p class="font12">' + tipoParticipante.val() + '</p></div><a class="font-12 bg-warning-dark br-4 cl-white halign-middle mg-top-16 pad-both-8 pad-sides-8 opacity-06 pointer" href="#">Aguardando</a></li>');
+    if (tipoParticipante.val() !== 'Participante não cadastrado') {
+      $('.lista-chamada').append('<li class="row valign-middle halign-between chamada"><div><p class="font12 on-bold">' + nomeParticipante.val() + '</p><p class="font12">' + tipoParticipante.val() + '</p></div><a class="font-12 bg-warning-dark br-4 cl-white halign-middle mg-top-16 pad-both-8 pad-sides-8 opacity-06 pointer" href="#">Aguardando</a></li>');
+    } else {
+      $('.lista-chamada').append('<li class="row valign-middle halign-between chamada"><div><p class="font12 on-bold">' + $('#nome-nao-cadastrado').val() + '</p><p class="font12">Não cadastrado</p></div><a class="font-12 bg-warning-dark br-4 cl-white halign-middle mg-top-16 pad-both-8 pad-sides-8 opacity-06 pointer" href="#">Aguardando</a></li>')
+    }
 
     tipoParticipante.val('');
   }

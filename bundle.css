@@ -3512,6 +3512,10 @@ textarea {
   background: #f8f8f8;
 }
 
+.bg-gray-opaco {
+  background: rgba(0, 0, 0, 0.08);
+}
+
 .cl-primary {
   color: #41a5bb;
 }
@@ -3590,6 +3594,10 @@ textarea {
 
 .cl-gray-f8 {
   color: #f8f8f8;
+}
+
+.cl-gray-opaco {
+  color: rgba(0, 0, 0, 0.08);
 }
 
 .pad-all-0 {
@@ -10789,30 +10797,30 @@ html {
 }
 
 .input {
-  border: 1px solid #f8f8f8;
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .input::-webkit-input-placeholder {
-  color: blue;
+  color: mapget(("primary": #41a5bb, "secundary": #f05e5c, "black": #000, "white": #fff, "warning": #ffa310, "warning-dark": #BD8B0C, "success": #21a310, "danger": #ff0010, "green": #60b29f, "gray": #444, "gray-22": #222, "gray-49": #495057, "gray-6f": #6f6f6f, "gray-6c": #6c6c6c, "gray-94": #949494, "gray-91": #919191, "gray-c0": #c0c0c0, "gray-c4": #c4c4c4, "gray-e7": #e7e7e7, "gray-f8": #f8f8f8, "gray-opaco": rgba(0, 0, 0, 0.08)), "gray-94");
 }
 
 .input:-ms-input-placeholder {
-  color: blue;
+  color: mapget(("primary": #41a5bb, "secundary": #f05e5c, "black": #000, "white": #fff, "warning": #ffa310, "warning-dark": #BD8B0C, "success": #21a310, "danger": #ff0010, "green": #60b29f, "gray": #444, "gray-22": #222, "gray-49": #495057, "gray-6f": #6f6f6f, "gray-6c": #6c6c6c, "gray-94": #949494, "gray-91": #919191, "gray-c0": #c0c0c0, "gray-c4": #c4c4c4, "gray-e7": #e7e7e7, "gray-f8": #f8f8f8, "gray-opaco": rgba(0, 0, 0, 0.08)), "gray-94");
 }
 
 .input::-ms-input-placeholder {
-  color: blue;
+  color: mapget(("primary": #41a5bb, "secundary": #f05e5c, "black": #000, "white": #fff, "warning": #ffa310, "warning-dark": #BD8B0C, "success": #21a310, "danger": #ff0010, "green": #60b29f, "gray": #444, "gray-22": #222, "gray-49": #495057, "gray-6f": #6f6f6f, "gray-6c": #6c6c6c, "gray-94": #949494, "gray-91": #919191, "gray-c0": #c0c0c0, "gray-c4": #c4c4c4, "gray-e7": #e7e7e7, "gray-f8": #f8f8f8, "gray-opaco": rgba(0, 0, 0, 0.08)), "gray-94");
 }
 
 .input::placeholder {
-  color: blue;
+  color: mapget(("primary": #41a5bb, "secundary": #f05e5c, "black": #000, "white": #fff, "warning": #ffa310, "warning-dark": #BD8B0C, "success": #21a310, "danger": #ff0010, "green": #60b29f, "gray": #444, "gray-22": #222, "gray-49": #495057, "gray-6f": #6f6f6f, "gray-6c": #6c6c6c, "gray-94": #949494, "gray-91": #919191, "gray-c0": #c0c0c0, "gray-c4": #c4c4c4, "gray-e7": #e7e7e7, "gray-f8": #f8f8f8, "gray-opaco": rgba(0, 0, 0, 0.08)), "gray-94");
 }
 
 .nice-select {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #fff;
   border-radius: 5px;
-  border: solid 1px #f8f8f8;
+  border: solid 1px rgba(0, 0, 0, 0.08);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   clear: both;
@@ -10837,11 +10845,11 @@ html {
 }
 
 .nice-select:hover {
-  border-color: #f8f8f8;
+  border-color: rgba(0, 0, 0, 0.08);
 }
 
 .nice-select:active, .nice-select.open, .nice-select:focus {
-  border-color: #f8f8f8;
+  border-color: rgba(0, 0, 0, 0.08);
 }
 
 .nice-select:after {
