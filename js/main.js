@@ -57,12 +57,12 @@ $(document).ready(function () {
 
   function checkSelects() {
     if (tipoParticipante.val() == 'Participante não cadastrado') {
-      $('.box-tipo').removeClass('col-6').removeClass('pad-right-8').addClass('col-12');
+      $('.box-tipo').removeClass('col-12 col-lg-6').removeClass('lg__pad-right-8').addClass('col-12');
 
       $('.box-participante').hide();
       $('.box-nao-cadastrado').show();
     } else {
-      $('.box-tipo').removeClass('col-12').addClass('pad-right-8').addClass('col-6');
+      $('.box-tipo').removeClass('col-12').addClass('lg__pad-right-8').addClass('col-12 col-lg-6');
       $('.box-participante').show();
       $('.box-nao-cadastrado').hide();
     }

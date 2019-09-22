@@ -66,9 +66,17 @@
 // ==============================================
 //                                  Border Radius
 // ==============================================
-.br-4 { border-radius: 4px; }
-.br-8 { border-radius: 8px; }
-.br-circle { border-radius: 50%; }
+.br-4 {
+  border-radius: 4px;
+}
+
+.br-8 {
+  border-radius: 8px;
+}
+
+.br-circle {
+  border-radius: 50%;
+}
 
 // ==============================================
 //                                     Image Size
@@ -80,4 +88,23 @@
 
 .opacity-06 {
   opacity: .6;
+}
+
+
+// ==============================================
+//                                      Head Kzas
+// ==============================================
+@media(max-width: 992px) {
+  .head-kzas {
+    justify-content: center !important;
+    text-align: center;
+    flex-direction: column;
+
+    .row {
+      &:first-child {
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+  }
 }

@@ -128,6 +128,28 @@ textarea {
   opacity: .6;
 }
 
+@media (max-width: 992px) {
+  .head-kzas {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .head-kzas .row:first-child {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 /*!
  * animate.css -https://daneden.github.io/animate.css/
  * Version - 3.7.2
